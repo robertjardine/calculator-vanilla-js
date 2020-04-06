@@ -1,4 +1,4 @@
-body{
+body {
     /* Disable text highlighting */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -84,10 +84,34 @@ body{
 
 .equals {
     color: #ff7651;
-    border-radius: 50%;
 }
 
 .equals:hover, .equals:focus {
     background: #ff7651;
     color: white;
+}
+
+@media only screen and (max-width: 550px) {
+
+    body {
+        background: #191919;
+        margin: 0px;
+    }
+
+    #calculator {
+        width: 95%;
+        box-shadow: none;
+    }
+
+    #output {
+        height: 25vh;
+    }
+
+    #input {
+        height: 75%;
+    }
+
+    .row {
+        height: 15vh;
+    }
 }
