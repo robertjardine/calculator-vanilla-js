@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./static/styles.css">
+
+    <script src="./static/index.js"></script>
+</head>
+
+<body>
+    <section id="calculator">
+        <div id="output">
+            <div id="output-values">
+                <div id="current-calculation"></div>
+                <input type="text"  pattern="" id="result" value="0" disabled>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div id="input">
+            <div class="row">
+                <div class="btn clear" onclick="clearInput()">C</div>
+                <div class="btn operator" onclick="changeSign()">+/-</div>
+                <div class="btn num operator">%</div>
+                <div class="btn num operator">/</div>
+            </div>
+            <div class="row">
+                <div class="btn num">7</div>
+                <div class="btn num">8</div>
+                <div class="btn num">9</div>
+                <div class="btn num operator">*</div>
+            </div>
+            <div class="row">
+                <div class="btn num">4</div>
+                <div class="btn num">5</div>
+                <div class="btn num">6</div>
+                <div class="btn num operator">-</div>
+            </div>
+            <div class="row">
+                <div class="btn num">1</div>
+                <div class="btn num">2</div>
+                <div class="btn num">3</div>
+                <div class="btn num operator">+</div>
+            </div>
+            <div class="row">
+                <div class="btn num">00</div>
+                <div class="btn num">0</div>
+                <div class="btn num">.</div>
+                <div class="btn equals" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
